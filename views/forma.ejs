@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Insert</title>
+</head>
+<body>
+<h1>Form Insert</h1>
+<a href="/list"><h3>Show </h3></a>
+<% if(status) {%>
+    <p style="color: green">Інформаці до БД додана успішно!!!</p>
+<%}%>
+<form  method="post" action="/formAction">
+    <input type="text" name="name">
+    <input type="text" name="pass">
+    <button type="submit">Добавити до БД</button>
+</form>
+</body>
+</html>

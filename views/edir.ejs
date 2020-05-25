@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Update</title>
+</head>
+<body>
+<h1>Form Update</h1>
+
+
+<form  method="post" action="/formUpdate">
+    <input type="hidden" name="id" value="<%= list[0].id%>">
+    <input type="text" name="name" value="<%= list[0].name%>">
+    <input type="text" name="pass" value="<%= list[0].pass%>">
+    <button type="submit">Обновити у  БД</button>
+</form>
+</body>
+</html>
